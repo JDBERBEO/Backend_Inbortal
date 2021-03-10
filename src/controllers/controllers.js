@@ -76,7 +76,7 @@ const  getProduct = async (req,res) => {
 }
 
 const editProduct = async (req, res) => {
-        const {  productName, productType, buyer, paymentStatus, deliverStatus, price, } = req.body
+        const {  productName, productType, buyer, paymentStatus, deliverStatus, price, quantityBought } = req.body
         const { id } = req.params;
         await Product.findByIdAndUpdate(id, {  productName, productType, buyer, paymentStatus, deliverStatus, price, quantityBought });
         // console.log(req.body)
