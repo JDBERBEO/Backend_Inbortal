@@ -36,7 +36,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(methodOverride('_method'))
 app.use(session({
     secret: process.env.SECRET_WORD || 'secretWord', //palabra secreta 
-    cookie: { maxAge: 1000*60   } //tiempo que dura la sesión abieta
+    cookie: { maxAge: 10000*60   } //tiempo que dura la sesión abieta
   }))
 app.use(flash())
 

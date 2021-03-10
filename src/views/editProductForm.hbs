@@ -29,27 +29,14 @@
             <option value="rosada">Rosada</option>
         </select>
         
+         {{!-- price --}}
         <label for="exampleFormControlInput1" class="form-label">
-                Precio:</label>
-        <div class="form-check">
-            <input class="form-check-input"
-            type="radio"
-            name="price" 
-            id="flexRadioDefault1"
-            value="48000">
-            <label class="form-check-label" for="flexRadioDefault1">
-             $48.000
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" 
-            type="radio" name="price" 
-            id="flexRadioDefault2"
-            value="52000">
-            <label class="form-check-label" for="flexRadioDefault2">
-            $52.000
-            </label>
-        </div>
+                Inserta el Precio <strong>sin puntos, comas o signos:</strong> </label>
+            <input type="text" class="form-control" name="price"></input>
+        {{!-- quantity bought --}}
+         <label for="exampleFormControlInput1" class="form-label">
+                Inserta cuantas agendas compró <strong>sin puntos, comas o signos:</strong></label>
+            <input type="text" class="form-control" name="quantityBought"></input>
 
     </div>
     <div class="col-md-6">
